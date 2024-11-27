@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/cards.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/contacts.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="Containerheader">
+    <div class="Containerheaderleft">
+      <img class="Containerimage" src="static/logo.png" alt="Logo" />
+      <div class="Texttitleheader">Memes Team</div>
+    </div>
+    <div class="Containerheaderright">
+      <div class="Containerbutton">
+        <div class="HeaderTextButtons">О нас</div>
+      </div>
+      <div class="Containerbutton">
+        <div class="HeaderTextButtons">Проекты</div>
+      </div>
+      <div class="Containerbutton">
+        <div class="HeaderTextButtons">Контакты</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about">
+    <div class="about__container">
+      <!-- Title, description -->
+      <h2 class="text text--title">О нас</h2>
+      <p class="text text--body">
+        Мы — Memes Team — небольшая, но целеустремленная команда, которая обожает веб-разработку. Нас всего двое, но нас объединяет единая миссия: создавать качественные и вдохновляющие проекты, которые приносят пользу и радуют наших клиентов. Мы не боимся сложных задач, наоборот, они нас мотивируют на поиск новых решений.
+
+Каждый наш проект — это сочетание креативного подхода, передовых технологий и внимания к деталям. Мы гордимся тем, что делаем, и всегда стремимся к совершенству. Работая с нами, вы получаете не только надежного партнера, но и эффективный результат, воплощенный в реальных проектах. С нами — комфортно, технологично и максимально продуктивно.
+      </p>
+      <p class="text text--accent">Качество и эффективность — наш приоритет!</p>
+
+    </div>
+
+    <!-- ProfileCardsList -->
+    <div class="profile-card-list">
+      <!-- ProfileCard -->
+      <article class="profile-card">
+        <header class="profile-card__header">
+          <img class="profile-card__image" src="static/member1.png" alt="Profile Image" />
+          <div class="profile-card__info">
+            <h2 class="text--primary text--large">Евлев Леонид Сергеевич</h2>
+            <p class="text--secondary text--small text--golden">@bonkibon</p>
+          </div>
+        </header>
+        <p class="text--primary text--large">Python/Js/C# разработчик</p>
+        <hr class="profile-card__separator" />
+        <section>
+          <h3 class="text--primary text--medium">🔧 Технологии, с которыми работаю:</h3>
+          <ul class="profile-card__list">
+            <li class="text--primary text--small">Python (REST Framework, FastAPI)</li>
+            <li class="text--primary text--small">Базы данных: PostgreSQL, Redis</li>
+            <li class="text--primary text--small">Очереди задач: Celery, RabbitMQ</li>
+            <li class="text--primary text--small">Контейнеризация: Docker</li>
+            <li class="text--primary text--small">API: RESTful APIs, GraphQL</li>
+            <li class="text--primary text--small">Frontend: HTML, CSS, JavaScript (Vue.js, React)</li>
+          </ul>
+        </section>
+        <hr class="profile-card__separator" />
+        <section>
+          <h3 class="text--primary text--medium">📫 Контакты</h3>
+          <ul class="profile-card__list">
+            <li class="text--primary text--small">
+              <span>email: </span>
+              <a href="mailto:bonkibon.education@gmail.com">bonkibon.education@gmail.com</a>
+            </li>
+            <li class="text--primary text--small">
+              <span>github: </span>
+              <a href="https://github.com/bonkibon-education" target="_blank">https://github.com/bonkibon-education</a>
+            </li>
+            <li class="text--primary text--small">
+              <span>telegram: </span>
+              <a href="https://t.me/bonkibon" target="_blank">https://t.me/bonkibon</a>
+            </li>
+          </ul>
+        </section>
+        <footer class="profile-card__footer">
+          <a href="https://github.com/bonkibon-education" target="_blank" class="profile-card__button">Open in
+            GitHub</a>
+        </footer>
+      </article>
+      <!-- ProfileCard -->
+      <article class="profile-card">
+        <header class="profile-card__header">
+          <img class="profile-card__image" src="static/member2.png" alt="Profile Image" />
+          <div class="profile-card__info">
+            <h2 class="text--primary text--large">Долженков Виктор Геннадьевич</h2>
+            <p class="text--secondary text--small text--golden">@lagbag</p>
+          </div>
+        </header>
+        <p class="text--primary text--large">🐍 Python/Django разработчик</p>
+        <hr class="profile-card__separator" />
+        <section>
+          <h3 class="text--primary text--medium">🔧 Технологии, с которыми работаю:</h3>
+          <ul class="profile-card__list">
+            <li class="text--primary text--small">Python (Django, Django REST Framework, FastAPI)</li>
+            <li class="text--primary text--small">Базы данных: PostgreSQL, Redis</li>
+            <li class="text--primary text--small">Очереди задач: Celery, RabbitMQ</li>
+            <li class="text--primary text--small">Контейнеризация: Docker</li>
+            <li class="text--primary text--small">API: RESTful APIs, GraphQL</li>
+            <li class="text--primary text--small">Frontend: HTML, CSS, JavaScript (Vue.js, React)</li>
+          </ul>
+        </section>
+        <hr class="profile-card__separator" />
+        <section>
+          <h3 class="text--primary text--medium">📫 Контакты</h3>
+          <ul class="profile-card__list">
+            <li class="text--primary text--small">
+              <span>email: </span>
+              <a href="mailto:vitya-dolzhenkov@mail.ru">vitya-dolzhenkov@mail.ru</a>
+            </li>
+            <li class="text--primary text--small">
+              <span>github: </span>
+              <a href="https://github.com/Lagbag" target="_blank">https://github.com/Lagbag</a>
+            </li>
+            <li class="text--primary text--small">
+              <span>telegram: </span>
+              <a href="https://t.me/LagBag71" target="_blank">https://t.me/LagBag71</a>
+            </li>
+          </ul>
+        </section>
+        <footer class="profile-card__footer">
+          <a href="https://github.com/Lagbag" target="_blank" class="profile-card__button">Open in GitHub</a>
+        </footer>
+      </article>
+    </div>
+    </div>
+  </section>
+  <!-- ProjectCards -->
+  <section class="projects">
+    <div class="projects__content">
+      <h2 class="text--title" id="projects">Проекты</h2>
+      <p class="text--description">
+        Мы — Memes Team, маленькая, но амбициозная команда, увлеченная веб-разработкой. Наш коллектив состоит из двух
+        человек, объединенных общими идеями, стремлением к совершенству и любовью к технологиям. Мы создаем реальные
+        проекты, которыми гордимся, и готовы решать сложные задачи для достижения ваших целей. В наших разработках мы
+        сочетаем креативный подход с современными технологиями, чтобы предложить качественные и эффективные решения. С
+        нами
+        просто, надежно и, главное, результативно!
+      </p>
+    </div>
+
+    <article class="project-card">
+      <header class="project-card__header">
+        <img class="project-card__logo" src="static/museumlogo.png" alt="Виртуальный музей логотип" />
+        <div class="project-card__title">
+          <h3 class="text--heading">Виртуальный музей школы №33, г. Курск</h3>
+        </div>
+        <a href="#" class="text--button">Open in GitHub</a>
+      </header>
+      <div class="project-card__separator"></div>
+      <p class="text--description">
+        Интерактивный онлайн-музей, сохраняющий историю школы. Архивы, фотографии и памятные экспонаты доступны в
+        удобной
+        цифровой форме.
+      </p>
+      <div class="project-card__separator"></div>
+      <div class="project-card__carousel">
+        <div class="project-card__carousel-track">
+          <img class="project-card__image" src="static/museum1.png" alt="Скриншот музея 1" />
+          <img class="project-card__image" src="static/museum2.png" alt="Скриншот музея 2" />
+          <img class="project-card__image" src="static/museum3.png" alt="Скриншот музея 3" />
+          <img class="project-card__image" src="static/museum4.png" alt="Скриншот музея 4" />
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <header class="project-card__header">
+        <img class="project-card__logo" src="static/emojiartlogo.png" alt="EmojiArt логотип" />
+        <div class="project-card__title">
+          <h3 class="text--heading">EmojiArt</h3>
+        </div>
+        <a href="#" class="text--button">Open in GitHub</a>
+      </header>
+      <div class="project-card__separator"></div>
+      <p class="text--description">
+        EmojiArt - программа для создания анимации из текстовых эмодзи. Простой интерфейс и широкий функционал позволяют
+        легко создавать креативные арты.
+      </p>
+      <div class="project-card__separator"></div>
+      <div class="project-card__carousel">
+        <div class="project-card__carousel-track">
+          <img class="project-card__image" src="static/EmojiArt1.png" alt="Скриншот EmojiArt 1" />
+          <img class="project-card__image" src="static/EmojiArt2.png" alt="Скриншот EmojiArt 2" />
+          <img class="project-card__image" src="static/EmojiArt3.png" alt="Скриншот EmojiArt 3" />
+          <img class="project-card__image" src="static/EmojiArt4.png" alt="Скриншот EmojiArt 4" />
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <header class="project-card__header">
+        <img class="project-card__logo" src="static/suslbuylogo.png" alt="Игровой маркетплейс логотип" />
+        <div class="project-card__title">
+          <h3 class="text--heading">Игровой маркетплейс</h3>
+        </div>
+        <a href="#" class="text--button">Open in GitHub</a>
+      </header>
+      <div class="project-card__separator"></div>
+      <p class="text--description">
+        Платформа для продажи цифровых ключей и гифтов от игр. Все товары отбираем только мы как администраторы, чтобы
+        гарантировать качество и надежность. Удобный интерфейс и безопасные транзакции для геймеров.
+      </p>
+      <div class="project-card__separator"></div>
+      <div class="project-card__carousel">
+        <div class="project-card__carousel-track">
+          <img class="project-card__image" src="static/suslbuy1.png" alt="Скриншот магазина 1" />
+          <img class="project-card__image" src="static/suslbuy2.png" alt="Скриншот магазина 2" />
+          <img class="project-card__image" src="static/suslbuy3.png" alt="Скриншот магазина 3" />
+          <img class="project-card__image" src="static/suslbuy1.png" alt="Скриншот магазина 1" />
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+
+  <!-- Contacts -->
+  <section class="contacts">
+    <div class="contacts__container">
+      <h2 class="text--title">Контакты</h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <p class="text--subtitle">Мы на Github:</p>
+          <p class="text--body">
+            <span>🐸 </span>
+            <a href="https://github.com/memes-team-org" class="text--link">https://github.com/memes-team-org</a>
+          </p>
+        </li>
+        <li class="contacts__item">
+          <p class="text--subtitle">Преподаватель ОБПОУ "КГПК": Немцева Ирина Александровна</p>
+          <p class="text--body">
+            <span>📫 </span>
+            <a href="mailto:iranemtseva@yandex.ru" class="text--link">iranemtseva@yandex.ru</a>
+          </p>
+        </li>
+        <li class="contacts__item">
+          <p class="text--subtitle">Образовательная организация:</p>
+          <p class="text--body">Курский Государственный Политехнический колледж (КГПК)</p>
+          <p class="text--body">г. Курск ул. Гагарина 27<br>пн-пт 09:00–17:00</p>
+          <p class="text--body">
+            <span>🌐 </span>
+            <a href="https://www.kg-college.ru/" class="text--link">https://www.kg-college.ru/</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <hr class="separator" />
+
+  <hr class="footer__separator" />
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__item">
+        <header class="footer__header">
+          <div class="footer__logo">
+            <img class="footer__logo-image" src="static/FooterItemSiteLogo.png" alt="Site Logo" />
+            <h1 class="footer__logo-title">Memes Team</h1>
+          </div>
+          <div class="footer__website">
+            <img class="footer__website-icon" src="static/FooterItemGithubIcon.png" alt="GitHub Icon" />
+            <p class="footer__website-title">GitHub organization</p>
+          </div>
+        </header>
+        <address class="footer__address">
+          г. Курск<br />
+          ул. Гагарина 27<br />
+          пн-пт 09:00–17:00
+        </address>
+        <a class="footer__link" href="https://www.kg-college.ru/" target="_blank">https://www.kg-college.ru/</a>
+      </div>
+
+      <div class="footer__item">
+        <h2 class="footer__section-title">Контакты</h2>
+        <div class="footer__contact-list">
+          <section class="footer__contact">
+            <h3 class="footer__contact-name">@lagbag</h3>
+            <ul class="footer__contact-info">
+              <li class="footer__contact-info-item">Email: <a
+                  href="mailto:vitya-dolzhenkov@mail.ru">vitya-dolzhenkov@mail.ru</a></li>
+              <li class="footer__contact-info-item">GitHub: <a href="https://github.com/Lagbag"
+                  target="_blank">https://github.com/Lagbag</a></li>
+              <li class="footer__contact-info-item">Telegram: <a href="https://t.me/LagBag71"
+                  target="_blank">https://t.me/LagBag71</a></li>
+            </ul>
+          </section>
+          <section class="footer__contact">
+            <h3 class="footer__contact-name">@bonkibon</h3>
+            <ul class="footer__contact-info">
+              <li class="footer__contact-info-item">Email: <a
+                  href="mailto:bonkibon.education@gmail.com">bonkibon.education@gmail.com</a></li>
+              <li class="footer__contact-info-item">GitHub: <a href="https://github.com/bonkibon-education"
+                  target="_blank">https://github.com/bonkibon-education</a></li>
+              <li class="footer__contact-info-item">Telegram: <a href="https://t.me/bonkibon"
+                  target="_blank">https://t.me/bonkibon</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer__item">
+        <h2 class="footer__section-title">Страницы</h2>
+        <ul class="footer__page-list">
+          <li class="footer__page-item"><a href="#about" class="footer__page-link">О нас</a></li>
+          <li class="footer__page-item"><a href="#projects" class="footer__page-link">Проекты</a></li>
+          <li class="footer__page-item"><a href="#contacts" class="footer__page-link">Контакты</a></li>
+        </ul>
+        <h2 class="footer__section-title">Проекты</h2>
+        <ul class="footer__project-list">
+          <li class="footer__project-item"><a href="#emojiart" class="footer__project-link">EmojiArt</a></li>
+          <li class="footer__project-item"><a href="#museum" class="footer__project-link">Museum</a></li>
+          <li class="footer__project-item"><a href="#marketplace" class="footer__project-link">GamingMarketplace</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

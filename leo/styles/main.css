@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+}
+
+
+/* Основные стили для заголовков */
+.text-title {
+    color: #E4D9FF; /* или любой другой основной цвет для заголовков */
+    font-size: 56px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    word-wrap: break-word;
+}
+  
+/* Подзаголовки или разделительные заголовки */
+.text-subtitle {
+    color: #333333;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Основной текст или описание */
+.text-body {
+    color: white; /* или #cccccc, если нужен более серый оттенок */
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: justify;
+    word-wrap: break-word;
+    text-indent: 2em; /* для описательных секций */
+}
+
+/* Текст для кнопок и ссылок */
+.text-link {
+    color: #31b6e7; /* или #96CC66 для зеленых кнопок */
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.text-link:hover {
+text-decoration: underline;
+}
+
+/* Текст для карточек или элементов профиля */
+.text-card {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+}

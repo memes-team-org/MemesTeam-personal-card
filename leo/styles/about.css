@@ -1,0 +1,64 @@
+/* Базовый стиль для текста */
+.about {
+  width: 100%;
+  background: url('../static/background.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  padding: 56px 0; /* Учитываем внутренние отступы */
+}
+
+.about__container {
+  margin: 0 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Заголовки */
+.text--title {
+  color: #ECFFD9;
+  font-size: 56px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Подзаголовки */
+.text--subtitle {
+  color: #ECFFD9;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Обычный текст */
+.text--body {
+  font-size: 24px;
+  font-weight: 500;
+  text-indent: 2em;
+}
+
+/* Мелкий текст */
+.text--small {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Акцентированный текст */
+.text--accent {
+  color: #FFD700; /* Пример акцента */
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}

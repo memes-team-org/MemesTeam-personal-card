@@ -1,0 +1,124 @@
+.footer {
+  width: 100%;
+  background: #0D0D0D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 0;
+}
+
+.footer__separator {
+  width: 100%;
+  height: 1px;
+  background: #96CC66;
+  margin: 2px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  gap: 128px;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__logo-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.footer__logo-title, .footer__website-title {
+  font-size: 24px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  color: #333333;
+}
+
+.footer__website {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__website-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.footer__address, .footer__link {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  color: #333333;
+}
+
+.footer__section-title {
+  font-size: 24px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: #333333;
+}
+
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__contact-name {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: #333333;
+}
+
+.footer__contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__contact-info-item a {
+  text-decoration: underline;
+  color: #1E1E1E;
+}
+
+.footer__page-list, .footer__project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__page-item, .footer__project-item {
+  margin: 4px 0;
+}
+
+.footer__page-link, .footer__project-link {
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.footer__page-link:hover, .footer__project-link:hover {
+  text-decoration: underline;
+}
