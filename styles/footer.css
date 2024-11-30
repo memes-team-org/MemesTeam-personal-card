@@ -1,124 +1,94 @@
 .footer {
-  width: 100%;
-  background: #0D0D0D;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 56px 0;
+    background-color: var(--color-dark-primary);
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.footer__separator {
-  width: 100%;
-  height: 1px;
-  background: #96CC66;
-  margin: 2px 0;
+.footer h1, 
+.footer h2, 
+.footer h3, 
+.footer h4, 
+.footer address, 
+.footer li { 
+    color: var(--color-dark-tertiary); 
 }
+
+
+/* ―――――――――――――――――― Footer containers ―――――――――――――――――― */
+
 
 .footer__container {
-  display: flex;
-  justify-content: center;
-  gap: 128px;
-  flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    flex-basis: calc(90%);
 }
 
-.footer__item {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.footer__section-header {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 8px;
 }
 
-.footer__header {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.footer__section {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.footer__logo {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.footer__section h3:first-child:hover {
+    cursor: pointer;
+    color: #CCCCCC;
 }
 
-.footer__logo-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
+
+/* ―――――――――――――――――― Footer website-logos ―――――――――――――――――― */
+
+
+.footer__section-website_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
-.footer__logo-title, .footer__website-title {
-  font-size: 24px;
-  font-family: Inter, sans-serif;
-  font-weight: 700;
-  color: #333333;
+
+.footer__section-website_logo img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.25s ease-in;
 }
 
-.footer__website {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.footer__section-website_logo:hover {
+    cursor: pointer;
 }
 
-.footer__website-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
+.footer__section-website_logo:hover img {
+    filter: grayscale(0%);
 }
 
-.footer__address, .footer__link {
-  font-size: 20px;
-  font-family: Inter, sans-serif;
-  font-weight: 500;
-  color: #333333;
+
+/* ―――――――――――――――――― Footer info ―――――――――――――――――― */
+
+
+.footer__section-info {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
-.footer__section-title {
-  font-size: 24px;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  color: #333333;
-}
-
-.footer__contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer__contact-name {
-  font-size: 20px;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  color: #333333;
-}
-
-.footer__contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__contact-info-item a {
-  text-decoration: underline;
-  color: #1E1E1E;
-}
-
-.footer__page-list, .footer__project-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__page-item, .footer__project-item {
-  margin: 4px 0;
-}
-
-.footer__page-link, .footer__project-link {
-  font-size: 16px;
-  font-family: Inter, sans-serif;
-  color: #1E1E1E;
-  text-decoration: none;
-}
-
-.footer__page-link:hover, .footer__project-link:hover {
-  text-decoration: underline;
+.footer__section-info li {
+    margin-left: 24px;
 }

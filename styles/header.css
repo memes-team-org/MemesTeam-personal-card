@@ -1,200 +1,150 @@
-body {
-  margin: 0 auto;
+
+.header {
+    max-width: 100%;    
+    background-color: var(--color-green-primary);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Containerheader {
-  max-width: 100%;
-  height: 88px;
-  padding-left: 128px;
-  padding-right: 128px;
-  background: #8CCC52;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  transition: all 0.3s ease;
-  overflow: hidden; /* Запрет на выход содержимого за границы */
+.header h1 { color: var(--color-dark-tertiary); }
+
+
+/* ―――――――――――――――――― Header title, containers ―――――――――――――――――― */
+
+
+.header__title {
+    display: none;
 }
 
-.Containerheaderleft {
-  justify-content: flex-start;
-  align-items: center;
-  gap: 56px;
-  display: flex;
-  white-space: nowrap;
-}
-
-.Containerimage {
-  width: 64px;
-  height: 64px;
-  min-width: 32px; /* Минимальная ширина логотипа */
-}
-
-.Texttitleheader {
-  color: #1E1E1E;
-  font-size: 40px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.Containerheaderright {
-  justify-content: flex-end;
-  align-items: center;
-  gap: 32px;
-  display: flex;
-  flex-wrap: nowrap; /* Запрещаем перенос элементов */
-}
-
-.Containerbutton {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  white-space: nowrap;
-  flex-shrink: 0; /* Запрет сжатия кнопок */
-}
-
-.HeaderTextButtons {
-  color: #1E1E1E;
-  font-size: 18px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-}
-
-@media (max-width: 1080px) {
-  .Texttitleheader {
-    font-size: 28px; /* Уменьшаем размер текста */
-  }
-
-  .HeaderTextButtons {
-    font-size: 16px; /* Уменьшаем размер текста кнопок */
-  }
-}
-
-/* Адаптивность для экранов шириной меньше 1024px */
-@media (max-width: 1024px) {
-  .Containerheader {
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 72px; /* Уменьшаем высоту */
-  }
-
-  .Containerheaderleft {
-    gap: 32px; /* Уменьшаем расстояние между логотипом и заголовком */
-  }
-
-  .Texttitleheader {
-    font-size: 28px; /* Уменьшаем размер текста */
-  }
-
-  .Containerheaderright {
-    gap: 16px; /* Уменьшаем расстояние между кнопками */
-  }
-
-  .Containerimage {
-    width: 48px;
-    height: 48px;
-  }
-
-  .Containerbutton {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .HeaderTextButtons {
-    font-size: 16px; /* Уменьшаем размер текста кнопок */
-  }
-}
-
-/* Адаптивность для экранов шириной от 768px до 481px */
-@media (max-width: 768px) {
-  .Containerheader {
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 64px; /* Уменьшаем высоту */
-    justify-content: space-between;
-  }
-
-  .Containerheaderleft {
-    gap: 16px; /* Еще меньше расстояние между логотипом и заголовком */
-  }
-
-  .Texttitleheader {
-    font-size: 20px; /* Уменьшаем размер текста Memes Team */
-  }
-
-  .Containerimage {
-    width: 40px;
-    height: 40px;
-  }
-
-  .Containerheaderright {
-    gap: 12px; /* Уменьшаем расстояние между кнопками */
-  }
-
-  .Containerbutton {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .HeaderTextButtons {
-    font-size: 14px; /* Уменьшаем размер текста кнопок */
-  }
-}
-
-@media (max-width: 460px) {
-  .Texttitleheader {
-    font-size: 16px; /* Уменьшаем размер текста */
-  }
-
-  .HeaderTextButtons {
-    font-size: 12px; /* Уменьшаем размер текста кнопок */
-  }
-}
-
-/* Адаптивность для экранов шириной меньше 425px */
-@media (max-width: 425px) {
-  .Containerheader {
-    padding-left: 12px;
-    padding-right: 12px;
-    height: 56px; /* Уменьшаем высоту */
-    justify-content: space-between;
-    gap: 8px;
-  }
-
-  .Containerheaderleft {
-    gap: 8px;
-  }
-
-  .Containerimage {
-    width: 32px;
-    height: 32px; /* Логотип остаётся видимым */
-    min-width: 32px;
-  }
-
-  .Texttitleheader {
-    display: none; /* Убираем текст Memes Team */
-  }
-
-  .Containerheaderright {
-    justify-content: space-between;
-    gap: 8px;
-    flex-wrap: nowrap; /* Все кнопки остаются в одной строке */
+.header__container {
     width: 100%;
-  }
+    overflow: hidden;
 
-  .Containerbutton {
-    padding-left: 6px;
-    padding-right: 6px;
-    flex-shrink: 0; /* Минимальный размер кнопок */
-  }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
-  .HeaderTextButtons {
-    font-size: 12px; /* Уменьшаем шрифт текста кнопок */
-  }
+.header__left, .header__right .header__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+/* ―――――――――――――――――― Adaptivee viewports ―――――――――――――――――― */
+
+
+/* Экран от 375px */
+@media (min-width: 375px) {
+    .header__container {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        justify-content: space-around;
+    }
+    .header__left, .header__right .header__nav-list {
+        gap: 32px;
+    }
+    .header__logo {
+        width: 32px;
+        height: 32px;
+    }
+}
+  
+/* Экран от 480px, 540 */
+@media (min-width: 480px) , (min-width: 540px) {
+    .header__left, .header__right .header__nav-list {
+        gap: 36px;
+    }
+    .header__logo {
+        width: 40px;
+        height: 36px;
+    }
+}
+
+/* Экран от 480px, 540 */
+@media (min-width: 540px) {
+    .header__title {
+        display: flex;
+    } 
+}
+
+
+/* Экран от 640px */
+@media (min-width: 640px) {
+    .header__left, .header__right .header__nav-list {
+        gap: 40px;
+    }
+    .header__logo {
+        width: 40px;
+        height: 40px;
+    }
+    .header__title {
+        display: flex;
+    }
+}
+
+/* Экран от 768px */
+@media (min-width: 768px) {
+    .header__left, .header__right .header__nav-list {
+        gap: 48px;
+    }
+    .header__logo {
+        width: 48px;
+        height: 48px;
+    }
+    .header__title {
+        display: flex;
+    }
+}
+
+/* Экран от 1024px */
+@media (min-width: 1024px) {
+    .header__left, .header__right .header__nav-list {
+        gap: 56px;
+    }
+    .header__logo {
+        width: 56px;
+        height: 56px;
+    }
+    .header__title {
+        display: flex;
+    }
+}
+
+/* Экран от 1280px */
+@media (min-width: 1280px) {
+    .header__container {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .header__left, .header__right .header__nav-list {
+        gap: 56px;
+    }
+    .header__logo {
+        width: 60px;
+        height: 60px;
+    }
+    .header__title {
+        display: flex;
+    }
+}
+
+/* Экран от 1440px */
+@media (min-width: 1440px) {
+    .header__container {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .header__left, .header__right .header__nav-list {
+        gap: 56px;
+    }
+    .header__title {
+        display: flex;
+    }
 }
