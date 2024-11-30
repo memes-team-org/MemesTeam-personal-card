@@ -1,0 +1,112 @@
+.section {
+    max-width: 100%;
+}
+
+.section#about {
+    background: url('../static/about/background.png') center/cover no-repeat;
+}
+
+.section#projects {
+    background: url('../static/projects/background.png') center/cover no-repeat;
+}
+
+.section#contacts {
+    background: url('../static/contacts/background.png') center/cover no-repeat;
+}
+
+
+/* ―――――――――――――――――― Container-default ―――――――――――――――――― */
+
+
+.section__container-default {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section__container-default h2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* ―――――――――――――――――― Adaptive viewports ―――――――――――――――――― */
+
+
+/* Экран от 375px */
+@media (min-width: 375px) {
+    .section__container-default {
+        gap: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+/* Экран от 480px */
+@media (min-width: 480px) {
+    .section__container-default {
+        gap: 18px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+/* Экран от 640px */
+@media (min-width: 640px) {
+    .section__container-default {
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+/* Экран от 768px */
+@media (min-width: 768px) {
+    .section__container-default {
+        gap: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+}
+
+/* Экран от 1024px */
+@media (min-width: 1024px) {
+    .section__container-default {
+        gap: 32px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+}
+
+/* Экран от 1280px */
+@media (min-width: 1280px) {
+    .section__container-default {
+        gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 96px;
+        margin-right: 96px;
+    }
+}
+
+/* Экран от 1440px */
+@media (min-width: 1440px) {
+    .section__container-default {
+        gap: 56px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+}

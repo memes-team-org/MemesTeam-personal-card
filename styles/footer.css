@@ -1,0 +1,94 @@
+.footer {
+    background-color: var(--color-dark-primary);
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer h1, 
+.footer h2, 
+.footer h3, 
+.footer h4, 
+.footer address, 
+.footer li { 
+    color: var(--color-dark-tertiary); 
+}
+
+
+/* ―――――――――――――――――― Footer containers ―――――――――――――――――― */
+
+
+.footer__container {
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    flex-basis: calc(90%);
+}
+
+.footer__section-header {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 8px;
+}
+
+.footer__section {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.footer__section h3:first-child:hover {
+    cursor: pointer;
+    color: #CCCCCC;
+}
+
+
+/* ―――――――――――――――――― Footer website-logos ―――――――――――――――――― */
+
+
+.footer__section-website_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.footer__section-website_logo img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.25s ease-in;
+}
+
+.footer__section-website_logo:hover {
+    cursor: pointer;
+}
+
+.footer__section-website_logo:hover img {
+    filter: grayscale(0%);
+}
+
+
+/* ―――――――――――――――――― Footer info ―――――――――――――――――― */
+
+
+.footer__section-info {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.footer__section-info li {
+    margin-left: 24px;
+}
